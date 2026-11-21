@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "md-table-png"
+version = "0.1.0"
+description = "Markdownの表をPNG画像に変換するCLI（noteなど表機能がないサービス向け）"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "dgtlchika" }]
+keywords = ["markdown", "table", "png", "note", "image"]
+dependencies = ["Pillow>=9"]
+
+[project.scripts]
+md-table-png = "md_table_png:main"
+
+[tool.setuptools]
+py-modules = ["md_table_png"]
